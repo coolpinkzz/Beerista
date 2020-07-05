@@ -36,3 +36,30 @@
     transform: rotate(360deg);
   }
 }
+
+.row{
+  text-align:left;
+}
+p{
+  font-size: 20px;
+}
+#des{
+  height:90px;
+  overflow: hidden;
+}
+.cardgrid{
+  padding: 10px;
+
+
+}
+.card-title, .card-subtitle{
+  font-size: 12px;
+}
+.btn{
+  margin-top: 20px;
+}
+#img{
+height: 200px;
+
+
+}
