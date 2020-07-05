@@ -107,8 +107,8 @@ class CardDetail extends Component{
             <Card  body inverse style={{ backgroundColor: '#333', borderColor: '#333' }} >
 
             <CardBody>
-              <img className="offset-md-3"id='img'src={details.fields.Attachments[0].url}/>
-              <CardText>{details.fields.Name}</CardText>
+              <img className="offset-3 offset-md-3"id='img'src={details.fields.Attachments[0].url}/>
+              <CardText className="d-flex justify-content-center" >{details.fields.Name}</CardText>
               <strong>Description</strong>
               <CardTitle id='des'>{details.fields.Description}</CardTitle>
               <Button>Get the Details ></Button>
@@ -123,14 +123,6 @@ class CardDetail extends Component{
 
     })
 
-    const outer = this.state.persons.map((item) => {
-      return(
-        <div key={item.id}>
-          <h3>{item.fields.Name}</h3>
-
-        </div>
-      );
-    });
 
 
     return(
@@ -138,11 +130,11 @@ class CardDetail extends Component{
       <Container>
         <InputGroup>
         <InputGroupAddon addonType="prepend">
-          <InputGroupText>Filter Offer</InputGroupText>
+          <InputGroupText>Search</InputGroupText>
         </InputGroupAddon>
         <Input onChange={this.searchHandler} />
       </InputGroup>
-        <Row>
+        <Row >
           {card}
         </Row>
 
