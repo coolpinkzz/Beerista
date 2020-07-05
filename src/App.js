@@ -1,6 +1,8 @@
 import React  from 'react';
 import { BrowserRouter ,Route, Switch } from "react-router-dom";
 
+
+
 import './App.css';
 import Contactus from "./components/ContactusComponent"
 import Home from "./components/HomeComponent"
@@ -15,13 +17,16 @@ function App() {
 
           <BrowserRouter>
             <Header/>
-            <Switch Location >
-              <Route path="/" component={Home} />
-              <Route exactpath="/aboutus" component={Aboutus} />
-              <Route exactpath="/contactus" component={Contactus} />
+              <Switch>
+                <Route exact path="/" component={Home} />
+                <Route  path="/aboutus" component={Aboutus} />
+                <Route  path="/contactus" component={Contactus} />
+
+              </Switch>
 
 
-            </Switch>
+
+
 
 
 
