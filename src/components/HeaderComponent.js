@@ -27,12 +27,12 @@ class Header extends Component {
 
         <Navbar bg="dark" variant="dark">
           <Container>
-            <Navbar.Brand href="/home">Quarantine with us</Navbar.Brand>
+            <Navbar.Brand href="/">Quarantine with us</Navbar.Brand>
               <Nav className="mr-auto">
                 <div>
 
                 </div>
-                <Nav.Link href="/home">Home</Nav.Link>
+                <Nav.Link href="/">Home</Nav.Link>
                 <Nav.Link href="/aboutus">About</Nav.Link>
                 <Nav.Link href="/contactus">Contact us</Nav.Link>
               </Nav>
